@@ -4,8 +4,495 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
 </head>
 <body>
+  <nav id="desktop-nav">
+    <div class="logo">John Paul J. Pamintuan</div>
+    <div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+        </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">John Paul J. Pamintuan</div>
+    <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#blog" onclick="toggleMenu()">Blog</a></li>
+            <li><a href="#contacts" onclick="toggleMenu()">Contacts</a></li>
+        </div>
+    </div>
+  </nav>  
+  <section id="profile">
+    <div class="section__pic-container">
+        <img src="./assets/JohnProfilePicture.jpg" alt="John Paul J. Pamintuan Profile Picture">
+    </div>
+    <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">John Paul J. Pamintuan</h1>
+        <p class="section__text__p2">Cybersecurity Professional | Personal Portfolio</p>
+        <div class="btn-container">
+            <button class="btn btn-color2" onclick="window.open('./assets/resume2.pdf')">
+                Download CV
+            </button>
+            <button class="btn btn-color1" onclick="location.href='./#contacts'">
+                Contact Info
+            </button>
+        </div>
+        <div id="socials-container">
+            <img src="./assets/linkedin.png" 
+            alt="My Linkedin Profile" 
+            class="icon" 
+            onclick="location.href='https://www.linkedin.com/in/johnpaulpamintuan/'" />
+            <img src="./assets/github.png" 
+            alt="My github Profile" 
+            class="icon" 
+            onclick="location.href='https://github.com/JohnPaulPamintuan'"/>
+        </div>
+    </div>
+  </section>
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    &nbsp;
+    <div class="section-container">
+        <div class="section__pic-container">
+            <img src="./assets/about-profile-picture.jpg" 
+            alt="Profile picture"
+            class="about-pic"
+            />
+        </div>
+        <div class="about-details-container">
+            <div class="about-containers">
+                <div class="details-containers">
+                    <img src="./assets/experience.png" 
+                    alt="Experience icon"
+                    class="icon"
+                    />
+                    <h3>Key Achievements</h3>
+                    <p> 
+                        <li>Certified with extensive certifications in cybersecurity from leading organizations, including Google, CompTIA, Cisco, ISC2 and IBM.</li>
+                        <li>Practical experience with cybersecurity tools, lab setups, and real-world projects in penetration testing, threat detection, and incident response.</li>
+                        <li>Developed and managed a home lab environment focused on penetration testing, network security and malware analysis.</li>
+                    </p>
+                </div>
+            </div>
+            <div class="text-container">
+                <h3>A self taught with a lot of interest in Cybersecurity</h3>
+                <p>Hi, I am John Paul, a cybersecurity professional based in Pardubice, Czech Republic, passionate about protecting the digital world. My journey started in luxury hospitality, where I developed key interpersonal skills before transitioning to cybersecurity to tackle technical challenges. I focus on both offensive and defensive security, refining my skills through platforms like HackTheBox, TryHackMe, and Coursera, while sharpening my Python skills for automation. My goal is to grow as a cybersecurity professional and ultimately become a highly skilled Penetration Tester, uncovering vulnerabilities and securing systems. Driven by curiosity, I aim to enhance digital security, contributing to a safer and more trustworthy digital environment.</p>
+            </div>
+            &nbsp;
+        </div>
+    </div>
+    <img 
+    src="./assets/arrow.png" 
+    alt="Arrow icon" 
+    class="arrow icon" 
+    onclick="location.href='./#experience'"
+    />
+  </section>
+  <section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Experience</h1>
+    <div class="experience-details-container">
+        <div class="about-containers">
+            <div class="details-containers">
+                <h2 class="experience-sub-title">Foundational Security</h2>
+                <div class="article-container">
+                    <article>
+                        <img 
+                        src="./assets/checkmark.png" 
+                        alt="experience icon" 
+                        class="icon"
+                        />
+                        <div>
+                            <h3>Operating Systems</h3>
+                            <p> Linux (Kali, Ubuntu), Windows</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img 
+                        src="./assets/checkmark.png" 
+                        alt="experience icon" 
+                        class="icon"
+                        />
+                        <div>
+                            <h3>Networking</h3>
+                            <p> TCP/IP, DNS, Wireshark (analysis), TCPdump</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img 
+                        src="./assets/checkmark.png" 
+                        alt="experience icon" 
+                        class="icon"
+                        />
+                        <div>
+                            <h3>Virtualization</h3>
+                            <p>VirtualBox, VMware</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img 
+                        src="./assets/checkmark.png" 
+                        alt="experience icon" 
+                        class="icon"
+                        />
+                        <div>
+                            <h3>Compliance & Risk</h3>
+                            <p>ISO 27001, NIST, GDPR understanding</p>
+                        </div>
+                    </article> 
+                    <article>
+                        <img 
+                        src="./assets/checkmark.png" 
+                        alt="experience icon" 
+                        class="icon"
+                        />
+                        <div>
+                            <h3>Programming</h3>
+                            <p>Python, Bash, PowerShell</p>
+                        </div>
+                    </article> 
+                </div>
+            </div>
+            <div class="details-containers">
+                <h2 class="experience-sub-title">Defensive Security
+                </h2>
+                <div class="article-container">
+                    <article>
+                        <img 
+                        src="./assets/checkmark.png" 
+                        alt="experience icon" 
+                        class="icon"
+                        />
+                        <div>
+                            <h3>Threat Detection & Response</h3>
+                            <p>Splunk</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img 
+                        src="./assets/checkmark.png" 
+                        alt="experience icon" 
+                        class="icon"
+                        />
+                        <div>
+                            <h3>Security Monitoring</h3>
+                            <p>SIEM Solutions, Windows Event Logging
+                            </p>
+                        </div>
+                    </article>
+                    <article>
+                        <img 
+                        src="./assets/checkmark.png" 
+                        alt="experience icon" 
+                        class="icon"
+                        />
+                        <div>
+                            <h3>Vulnerability Management:</h3>
+                            <p>Nessus, OpenVAS</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img 
+                        src="./assets/checkmark.png" 
+                        alt="experience icon" 
+                        class="icon"
+                        />
+                        <div>
+                            <h3>Endpoint Security</h3>
+                            <p>Windows Defender</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img 
+                        src="./assets/checkmark.png" 
+                        alt="experience icon" 
+                        class="icon"
+                        />
+                        <div>
+                            <h3>Firewall/IDS/IPS Management:</h3>
+                            <p>Suricata, Palo Alto</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="details-containers">
+                <h2 class="experience-sub-title">Offensive Security</h2>
+                <div class="article-container">
+                    <article>
+                        <img 
+                        src="./assets/checkmark.png" 
+                        alt="experience icon" 
+                        class="icon"
+                        />
+                        <div>
+                            <h3>Penetration Testing</h3>
+                            <p>Metasploit
+                            </p>
+                        </div>
+                    </article>
+                    <article>
+                        <img 
+                        src="./assets/checkmark.png" 
+                        alt="experience icon" 
+                        class="icon"
+                        />
+                        <div>
+                            <h3>Exploit Development</h3>
+                            <p>Exploit frameworks
+                            </p>
+                        </div>
+                    </article>
+                    <article>
+                        <img 
+                        src="./assets/checkmark.png" 
+                        alt="experience icon" 
+                        class="icon"
+                        />
+                        <div>
+                            <h3>Reconnaissance</h3>
+                            <p>Nmap, etc</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img 
+                        src="./assets/checkmark.png" 
+                        alt="experience icon" 
+                        class="icon"
+                        />
+                        <div>
+                            <h3>Python</h3>
+                            <p>Average knowledge
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+    <img  
+    src="./assets/arrow.png" 
+    alt="Arrow icon" 
+    class="arrow icon" 
+    onclick="location.href='./#projects'"
+    />
+  </section>
+  <section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+        <div class="about-containers">
+        <div class="details-containers color-container">
+            <div class="article-container">
+                <img 
+                src="./assets/WindowsProject1.jpeg" 
+                alt="Project 1"
+                class="project-img"
+                />
+            </div>
+            <h2 class="experience-sub-title project-title">Windows Defender</h2>
+            <div class="btn-container">
+                <button class="btn btn-color2 project-btn" onclick="location.href='https://github.com/JohnPaulPamintuan/Microsoft-Windows-Defender-Windows-Firewall'"
+                >
+                    Microsoft Defender
+                </button>
+                <button class="btn btn-color2 project-btn" onclick="location.href='https://github.com/JohnPaulPamintuan/Microsoft-Windows-Defender-Windows-Firewall'"
+                >
+                    Windows Firewall
+                </button>
+            </div>
+        </div>
+        <div class="details-containers color-container">
+            <div class="article-container">
+                <img 
+                src="./assets/ADproject1.png" 
+                alt="Project 2"
+                class="project-img"
+                />
+            </div>
+            <h2 class="experience-sub-title project-title">Active Directory</h2>
+            <div class="btn-container">
+                <button class="btn btn-color2 project-btn" onclick="location.href='https://github.com/JohnPaulPamintuan/Setting-up-Active-directory'"
+                >
+                    Setting up AD
+                </button>
+                <button class="btn btn-color2 project-btn" onclick="location.href='https://github.com/JohnPaulPamintuan/Active-Directory'"
+                >
+                    Configure AD
+                </button>
+            </div>
+        </div>
+        <div class="details-containers color-container">
+            <div class="article-container">
+                <img 
+                src="./assets/NTAproject2.jpeg" 
+                alt="Project 3"
+                class="project-img"
+                />
+            </div>
+            <h2 class="experience-sub-title project-title">Network Analysis</h2>
+            <div class="btn-container">
+                <button class="btn btn-color2 project-btn" onclick="location.href='https://github.com/JohnPaulPamintuan/TCPdump'"
+                >
+                    TCPdump
+                </button>
+                <button class="btn btn-color2 project-btn" onclick="location.href='https://github.com/JohnPaulPamintuan/Wireshark'"
+                >
+                    Wireshark
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+  </section>
+  <section id="projects">
+    <div class="experience-details-container">
+        <div class="about-containers">
+        <div class="details-containers color-container">
+            <div class="article-container">
+                <img 
+                src="./assets/NTAproject3.webp" 
+                alt="Project 1"
+                class="project-img"
+                />
+            </div>
+            <h2 class="experience-sub-title project-title">Unix Security</h2>
+            <div class="btn-container">
+                <button class="btn btn-color2 project-btn" onclick="location.href='https://github.com/JohnPaulPamintuan/Navigate-and-manage-the-file-system-using-Linux-commands-via-the-Bash-shell'"
+                >
+                File system Commands
+                </button>
+            </div>
+        </div>
+        <div class="details-containers color-container">
+            <div class="article-container">
+                <img 
+                src="./assets/NTAporject4.jpeg" 
+                alt="Project 2"
+                class="project-img"
+                />
+            </div>
+            <h2 class="experience-sub-title project-title">Windows Event log analysis</h2>
+            <div class="btn-container">
+                <button class="btn btn-color2 project-btn" onclick="location.href='https://github.com/JohnPaulPamintuan/Windows-Event-log-analysis'"
+                >
+                    Sysmon, ETW
+                </button>
+                <button class="btn btn-color2 project-btn" onclick="location.href='https://github.com/JohnPaulPamintuan/Get-WinEvent-'"
+                >
+                    GetWin-Event
+                </button>
+            </div>
+        </div>
+        <div class="details-containers color-container">
+            <div class="article-container">
+                <img 
+                src="./assets/homelabproject5.jpeg" 
+                alt="Project 3"
+                class="project-img"
+                />
+            </div>
+            <h2 class="experience-sub-title project-title">Home Lab for Cybersecurity</h2>
+            <div class="btn-container">
+                <button class="btn btn-color2 project-btn" onclick="location.href='https://github.com/JohnPaulPamintuan/Creating-a-basic-home-lab-'"
+                >
+                    Attacking
+                </button>
+                <button class="btn btn-color2 project-btn" onclick="location.href='https://github.com/JohnPaulPamintuan/Creating-a-basic-home-lab-'"
+                >
+                    Defending
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<img src="./assets/arrow.png" 
+    alt="Arrow icon" 
+    class="icon arrow" onclick="location.href='./#blog'" 
+    />
+  </section>
+  <section id="blog">      
+    <p class="section__text__p1">My Recent</p>
+    <h1 class="title">Blog</h1>
+    </div>
+    <div class="experience-details-container">
+        <div class="about-containers">
+        <div class="details-containers1 color-container">
+            <div class="article-container">
+                <img 
+                src="./assets/adventure-lettering-with-photo_23-2148178032.jpg" 
+                alt="Project 3"
+                class="blog-img"
+                />
+            </div>
+            <h2 class="experience-sub-title project-title">WE ARE HERE TO FAIL, LEARN, AND TRY AGAIN.</h2>
+            <div class="btn-container">
+                <button class="btn btn-color2 project-btn" onclick="location.href='single.html'"
+                >
+                    Read More
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<img src="./assets/arrow.png" 
+    alt="Arrow icon" 
+    class="icon arrow" onclick="location.href='./#contacts'" 
+    />
+  </section>
+  <section id="contacts">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+            <img 
+            src="./assets/email.png" 
+            alt="email icon"
+            class="icon contact-icon email-icon"
+            />
+            <p><a href="mailto:Johnpauljpamintuan@gmail.com">Johnpauljpamintuan@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+            <img 
+            src="./assets/linkedin.png" 
+            alt="Linkedin icon"
+            class="icon contact-icon"
+            />
+            <p><a href="https://www.linkedin.com/in/johnpaulpamintuan">LinkedIN</a></p>
+        </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+        <div class="nav-links-container">
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+            </ul>
+        </div>
+    </nav>
+    <p>Copyright &#169; 2024 John Paul J. Pamintuan. All Rights Reserved</p>
+  </footer>
+  <script src="script.js"></script>  
     
 </body>
 </html>

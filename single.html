@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">John Paul J. Pamintuan</div>
+    <div>
+        <ul class="nav-links">
+            <li><a href="http://127.0.0.1:5500/index.html#about">About</a></li>
+            <li><a href="http://127.0.0.1:5500/index.html#experience">Experience</a></li>
+            <li><a href="http://127.0.0.1:5500/index.html#projects">Projects</a></li>
+            <li><a href="http://127.0.0.1:5500/index.html#blog">Blog</a></li>
+            <li><a href="http://127.0.0.1:5500/index.html#contacts">Contacts</a></li>
+        </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">John Paul J. Pamintuan</div>
+    <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#blog" onclick="toggleMenu()">Blog</a></li>
+            <li><a href="#contacts" onclick="toggleMenu()">Contacts</a></li>
+        </div>
+    </div>
+  </nav>  
+  <section id="profile">
+    <div class="section__pic-container">
+        <img src="./assets/adventure-lettering-with-photo_23-2148178032.jpg" alt="John Paul J. Pamintuan Profile Picture">
+    </div>
+    <div class="section__text">
+        <h1 class="title">          WE ARE HERE TO FAIL, LEARN, AND TRY AGAIN.</h1>
+        <p class="section__text__p1">November 27, 2024</p>
+    </div>
+  </section>
+  <section id="about">
+            <div class="text-container">
+                <h3>How Did I Start in the Field of Cybersecurity?</h3>
+                <p style="margin-bottom:0;"> If someone had told me a few years ago that I’d be pursuing a career in cybersecurity, I might have laughed. At the time, I was immersed in luxury hospitality, perfecting the art of exceptional customer service. But somewhere along the way, my curiosity about technology turned into something much bigger—a passion for cybersecurity.
+
+                  So how did I get here? Let me tell you.</p>
+                  &nbsp;
+                  <h3>The Spark of Passion</h3>
+                  <p style="margin-bottom:0;"> It all started with a fascination for how things work—and how they can break. I’ve always loved solving puzzles, understanding the pieces, and figuring out how they fit together. When I came across stories of major cybersecurity breaches, I couldn’t stop thinking about the challenges behind preventing them.</p>
+                  <p>How do you secure a system against an invisible enemy? How do you stay one step ahead of attackers? These questions stuck with me, sparking a desire to dig deeper.</p>
+                  <p>But diving into cybersecurity wasn’t just about curiosity—it was also about purpose. The idea of defending people, businesses, and systems in an increasingly connected world gave me a sense of responsibility. I wanted to make a difference, even if my work went unnoticed.</p>
+                  &nbsp;
+                  <h3>Taking the First Steps</h3>
+                  <p>Starting out wasn’t easy. I had no formal technical background, and the learning curve was steep. Networking protocols felt like a foreign language, and setting up my first virtual lab was an exercise in trial and error (and lots of Googling).</p>
+                  <p>But each step, no matter how small, brought me closer to my goal. I began with the basics, exploring platforms like Coursera, HackTheBox, and TryHackMe. I earned certifications—Google Cybersecurity, CompTIA Security+, and others from Splunk, IBM, and Cisco. With each course and hands-on project, I felt my confidence grow.</p>
+                  &nbsp;
+                  <h3>Building My Foundation</h3>
+                  <p>As I dove deeper, I found my stride in both offensive and defensive security strategies. I learned to analyze network traffic with tools like TCPdump and Wireshark, monitor Windows events with Sysmon and Event Tracing for Windows (ETW), and configure secure environments with Microsoft Defender and Active Directory.</p>
+                  <p>Every project I completed was a milestone, each one teaching me not only technical skills but also the importance of persistence and adaptability. I realized that cybersecurity wasn’t just about tools and techniques—it was about mindset.</p>
+                  &nbsp;
+                  <h3>Why Cybersecurity?</h3>
+                  <p>For me, cybersecurity is more than a career; it’s a mission. It’s about protecting what matters in a world that relies on technology more than ever. It’s about staying ahead of evolving threats and making the digital landscape safer for everyone.</p>
+                  <p>And the best part? The field is constantly evolving. There’s always something new to learn, a new challenge to tackle, or a new problem to solve. That’s what keeps me motivated.</p>
+                  &nbsp;
+                  <h3>What’s Next?</h3>
+                  <p>My ultimate goal is to become the ultimate Penetration Tester, uncovering vulnerabilities and helping organizations build stronger defenses. To get there, I’m focusing on automation, orchestration, and Python scripting while continuing to refine my offensive security skills.</p>
+                  <p>This blog will be my way of sharing the journey—the successes, the failures, and everything in between. If you’re on a similar path or just curious about cybersecurity, I hope my story inspires you to keep pushing forward.</p>
+                  <p>Here’s to failing, learning, and trying again. Let’s make the digital world a safer place, one challenge at a time.</p>
+            </div>
+  </section>
+  &nbsp;
+  <section id="contacts">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+            <img 
+            src="./assets/email.png" 
+            alt="email icon"
+            class="icon contact-icon email-icon"
+            />
+            <p><a href="mailto:Johnpauljpamintuan@gmail.com">Johnpauljpamintuan@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+            <img 
+            src="./assets/linkedin.png" 
+            alt="Linkedin icon"
+            class="icon contact-icon"
+            />
+            <p><a href="https://www.linkedin.com/in/johnpaulpamintuan">LinkedIN</a></p>
+        </div>
+    </div>
+  </section>
+  <footer>
+    <p>Copyright &#169; 2024 John Paul J. Pamintuan. All Rights Reserved</p>
+  </footer>
+  <script src="script.js"></script>  
+    
+</body>
+</html>
