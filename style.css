@@ -466,7 +466,7 @@ article .icon {
 .contact-info-container {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     gap: 0.5rem;
     margin: 1rem;
 }
